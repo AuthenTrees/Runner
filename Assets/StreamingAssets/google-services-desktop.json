@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "494575943221",
+    "project_id": "runner-5b978",
+    "storage_bucket": "runner-5b978.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494575943221:android:10121d6174ef1cd825bb7c",
+        "android_client_info": {
+          "package_name": "com.AuthenTrees.Runner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNoKv_Vk41EIrZxp2eSqCefznoPQwipis"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

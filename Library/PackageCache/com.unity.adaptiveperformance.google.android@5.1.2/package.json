@@ -1,0 +1,44 @@
+{
+  "name": "com.unity.adaptiveperformance.google.android",
+  "displayName": "Adaptive Performance Android",
+  "version": "5.1.2",
+  "unity": "2022.3",
+  "description": "The Adaptive Performance Android package provides the Adaptive Performance subsystem for Android platforms and works in combination with Adaptive Performance. \n\nBy installing this package, you agree to the terms and conditions of the Unity End User License Agreement found under \"View licenses\" above.",
+  "keywords": [
+    "mobile",
+    "adaptive",
+    "performance",
+    "utility",
+    "utilities",
+    "core",
+    "google",
+    "ap",
+    "provider",
+    "subsystem",
+    "gamesdk",
+    "VRR",
+    "indexer",
+    "scaler",
+    "boost",
+    "profiles",
+    "cluster",
+    "clusterinfo"
+  ],
+  "dependencies": {
+    "com.unity.modules.subsystems": "1.0.0",
+    "com.unity.modules.androidjni": "1.0.0",
+    "com.unity.adaptiveperformance": "5.1.0"
+  },
+  "_upm": {
+    "changelog": "### Changed\n* Min supported Unity version increased to 2022.3.\n* Updated Performance Hint API logic:\n  * dialog box requesting to turn on Frame Stats when provider is installed or updated.\n  * creating two Performance sessions, reporting full frame time to the first session, max of the CPU times for the Unity main thread and for the Graphics thread to the second session.\n  * reporting the target CPU times for both sessions only when the target FPS is changed.\n  * supporting new Android 15 (API 35) specific methods to report the GPU time to the first session.\n* Updated Thermal API logic:\n  * requesting the Thermal headroom every 12 sec (1 sec on Android 15).\n* Support Android 16 KB page size devices by aligning `libAdaptivePerformanceHint.so` and `libAdaptivePerformanceThermalHeadroom.so` to 16 KB\n\n### Fixed\n* Fixed problem with \"DllNotFoundException: Unable to load DLL 'AdaptivePerformanceThermalHeadroom'\" when running on Android 11 devices.\n* Fixed problem with extra memory allocation when reporting CPU/GPU times using Performance Hint Manager.\n* Requesting GameMode only when app starts or resumes."
+  },
+  "upmCi": {
+    "footprint": "df0e3e3725c6c95904fb6804324ce6f0b607c002"
+  },
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.adaptiveperformance.google.android@5.1/manual/index.html",
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/com.unity.adaptiveperformance.google.android.git",
+    "type": "git",
+    "revision": "5847dfbf90d76d9cf0219e46556d367ca91c6b72"
+  }
+}
